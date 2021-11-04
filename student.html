@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Data</title>
+    <style>
+        table, thead, th, tr, td {
+            border: 3px solid black;
+            font-size: 30px;
+            background-color: grey;
+            text-align: center;
+        
+        }
+        input, button {
+            height: 30px;
+        }
+        #inputData {
+            display: block;
+            margin-top: 50px;
+            position: static;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id = "collegeStudents">
+        <table id = "studentsTable" style = "width: 100%; margin-top: 20px;">
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </thead>
+            <tbody id = "tableData"></tbody>
+        </table>
+        <button type = "button" onclick = "currentStudents()">Student Info</button>
+    </div> 
+
+<script src = "main.js"></script>
+</body>
+</html>
