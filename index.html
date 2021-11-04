@@ -1,3 +1,4 @@
+<!--Simple table to add row and table data-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table And Data</title>
     <style>
-        table, th, tr {
+        table, th, tr, td {
             border: 3px solid black;
             font-size: 30px;
             background-color: grey;
+            text-align: center;
         
         }
         input, button {
@@ -17,7 +19,7 @@
         }
         #inputData {
             display: block;
-            margin-top: 380px;
+            margin-top: 50px;
             position: fixed;
         }
     </style>
@@ -25,24 +27,24 @@
 <body>
 
     <h1>Table of Employee</h1>
-    <table style="width: 100%;">
+    <table id = "myTable" style = "width: 100%;">
         <tr>
             <th>Name</th>
             <th>Position</th>
             <th>Salary</th>
         </tr>
         <tr>
-            <th>Ram</th>
-            <th>Manager</th>
-            <th>50,000</th>
+            <td>Ram</td>
+            <td>Manager</td>
+            <td>50,000</td>
         </tr>
     </table>
     
     <div id = "inputData">
-    <input type  = "text" placeholder="Name of the employee">
-    <input type  = "text" placeholder="Position">
-    <input type  = "number" placeholder="salary">
-    <button type = "submit">Add Employee</button>
+    <input type  = "text"   id = "name" placeholder = "Name of the employee">
+    <input type  = "text"   id = "position" placeholder = "Position">
+    <input type  = "number" id = "salary" placeholder = "salary">
+    <button type = "submit" onclick = "addData()">Add Employee</button>
     </div>
 
 
