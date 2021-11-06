@@ -163,7 +163,8 @@ const companies = [
 // console.log(companiesTenYears);
 
 //*****************************************map******************************************
- // very useful to manipulate Data
+
+// very useful to manipulate Data
 // map() creates a new array from calling a function for every array element.
 // map() calls a function once for each element in an array.
 // map() does not execute the function for empty elements.
