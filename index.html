@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table And Data</title>
     <style>
-        table, th, tr, td {
+        table, thead, th, tr, td {
             border: 3px solid black;
             font-size: 30px;
             background-color: grey;
@@ -20,24 +20,30 @@
         #inputData {
             display: block;
             margin-top: 50px;
-            position: fixed;
+            position: static;
         }
+
+
     </style>
 </head>
 <body>
 
     <h1>Table of Employee</h1>
     <table id = "myTable" style = "width: 100%;">
+      <thead> 
         <tr>
             <th>Name</th>
             <th>Position</th>
             <th>Salary</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
             <td>Ram</td>
             <td>Manager</td>
             <td>50,000</td>
         </tr>
+      </tbody>
     </table>
     
     <div id = "inputData">
@@ -46,6 +52,8 @@
     <input type  = "number" id = "salary" placeholder = "salary">
     <button type = "submit" onclick = "addData()">Add Employee</button>
     </div>
+
+   
 
 
 <script src="main.js"></script>
