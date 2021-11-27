@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack And Queue</title>
+</head>
+<body>
+  
+    
+
+<script>
+
+    //Queue Operation in array(first in first out FIFO)
+    
+    //Array as Queue
+    console.log("Queue");
+    let myArray = [];
+    myArray.push(9);
+    myArray.push(7);
+    myArray.push(3);
+    //myArray = [9, 7, 3];
+    console.log(myArray);
+    console.log(myArray.shift()); //9 
+    console.log(myArray.shift());  //7 
+    console.log(myArray.shift()); //3
+    console.log("FIFO");
+    console.log("--------------------------");
+    
+    //Stack operation in array(Last in first out LIFO)
+
+    //Array as stack
+    let myNewArray = [];
+    myNewArray.push(4);
+    myNewArray.push(8);
+    myNewArray.push(2);
+    // myNewArray = [4, 8, 2];
+    console.log(myNewArray);
+    console.log(myNewArray.pop()); //2 
+    console.log(myNewArray.pop()); //8
+    console.log(myNewArray.pop()); //4
+    console.log("LIFO");
+
+    
+</script>  
+</body>
+</html>

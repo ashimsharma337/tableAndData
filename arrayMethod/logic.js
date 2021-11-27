@@ -15,7 +15,19 @@ const fruitsArray = ["banana", "avocado", "peach", "kiwi", "apple", "orange"];
 
 // The join() method also joins all array elements into a string.
 // It behaves just like toString(), but in addition you can specify the separator:
-// document.getElementById("display").innerHTML = fruitsArray.join("*");
+//  document.getElementById("display").innerHTML = fruitsArray.join("*");
+
+//  for ( let i = 0; i < numberArray.length; i++) {
+//    console.log(i);//this prints multiple console if we want to print in the same console we use array.join("")
+//  }
+//  let singleLine = numberArray.join();//gives results seperated by comma in-between elements
+//  let singleLine1 = numberArray.join("");//gives results no comma no space in-between elements
+//  let singleLine2 = numberArray.join(" ");//gives results with space no comma in-between elements
+//  let singleLine3 = numberArray.join("-");//gives results with - in-between elements
+//  console.log(singleLine);
+//  console.log(singleLine1);
+//  console.log(singleLine2);
+//  console.log(singleLine3);
 
 // Popping And Pushing:::::::::
 
